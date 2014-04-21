@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="Infinite Comic Reader">
+	<property name="target" value="publish" />
+	<property name="source" value="src" />
+	<property name="version" value="1.6" />
+	<path id="classpath">
+		<pathelement location="${target}" />
+		<pathelement location="lib/jsoup.jar" />
+		<pathelement location="lib/comic-surfer-sdk.jar" />
+	</path>
+	<target name="init">
+		<mkdir dir="${target}" />
+	</target>
+	<target name="clean">
+		<delete dir="${target}" />
+	</target>
+	<target name="build" depends="clean, build-project, pack-jar" />
+	<target name="build-project" depends="init">
+		<javac destdir="${target}" source="${version}" target="${version}" includeantruntime="false">
+			<src path="${source}" />
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+	<target name="pack-jar">
+		<jar destfile="${target}/infinite.jar">
+		    <fileset dir="${target}" includes="tw/comicsurfer/**" />
+		</jar>
+	</target>
+</project>

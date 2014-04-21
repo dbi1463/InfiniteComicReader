@@ -1,4 +1,4 @@
-/* package-info.java created on April 2, 2014
+/* package-info.java created on 2014/4/21
  *
  * This file is a part of the Infinite Comic Reader plug-in.
  */
@@ -10,4 +10,4 @@
  * @author Spirit
  * @version 1.0
  */
-package infinite.comic.reader;
+package tw.comicsurfer.readers.infinite;
