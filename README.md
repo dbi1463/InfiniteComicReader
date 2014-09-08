@@ -6,8 +6,8 @@ This project is to develop a comic reader plug-in that can read comics from the 
 本專案為[Comic Surfer](http://dbi1463.pixnet.net/blog/post/28474770)開發可以從[無線動漫](http://www.8comic.com/)讀取漫畫的外掛，本外掛不保證以下事項：(1)漫畫來源的合法性；(2)針對論壇新格式的及時更新。
 
 
-How to build
-============
+How to build & Install
+======================
 
 This project is a Ant project, so it is simple to build the project by downloading the project, going to the folder in console, and press the following command, done! That is all!
 
@@ -15,10 +15,15 @@ This project is a Ant project, so it is simple to build the project by downloadi
 ant
 ```
 
+The ant script will build a packed zip file. Extract the zip file to the readers folder in the Comic Surfer installation folder.
+
 本專案是一個Ant專案，因此只須下載專案，在命令模式中進到專案目錄，輸入ant指令就完成了！
 ```
 ant
 ```
+
+建置腳本會打包所有的東西為一個ZIP檔，將該ZIP解壓縮到Comic Surfer安裝目錄中的readers子目錄即可。
+
 
 Runtime Requirement
 ===================

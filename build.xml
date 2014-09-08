@@ -10,6 +10,7 @@
 	</path>
 	<target name="init">
 		<mkdir dir="${target}" />
+		<mkdir dir="${target}/infinite" />
 	</target>
 	<target name="clean">
 		<delete dir="${target}" />
@@ -22,15 +23,18 @@
 		</javac>
 	</target>
 	<target name="pack-jar">
-		<jar destfile="${target}/infinite.jar">
+		<jar destfile="${target}/infinite/infinite.jar">
 		    <fileset dir="${target}" includes="tw/comicsurfer/**" />
 		</jar>
+		
 	</target>
 	<target name="publish">
+		<copy file="lib/jsoup.jar" todir="${target}/infinite" />
+		<copy file="./reader.xml" todir="${target}/infinite" />
 		<zip destfile="${target}/infinite.zip">
-			<fileset dir="${target}" includes="infinite.jar" />
-			<fileset dir="lib" includes="jsoup.jar" />
-			<fileset dir="." includes="reader.xml" />
+			<fileset dir="${target}">
+				<exclude name="tw/**" />
+			</fileset>
 		</zip>
 	</target>
 </project>
