@@ -11,9 +11,9 @@ How to build
 
 This project is a Ant project, so it is simple to build the project by downloading the project, going to the folder in console, and press the following command, done! That is all!
 
-'''
+```
 ant
-'''
+```
 
 本專案是一個Ant專案，因此只須下載專案，在命令模式中進到專案目錄，輸入ant指令就完成了！
 ```
