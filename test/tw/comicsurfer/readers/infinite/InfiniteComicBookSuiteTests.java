@@ -24,6 +24,6 @@ public class InfiniteComicBookSuiteTests {
 		InfiniteComicBookSuite suite = new InfiniteComicBookSuite(new URI("http://www.8comic.com/html/3927.html"));
 		suite.open();
 		assertEquals(42, suite.getComicBookCount());
-		assertEquals("Às¯] (Chapters on www.8comic.com)", suite.getSuiteName());
+		assertEquals("Às¯] (Volumes on www.8comic.com)", suite.getSuiteName());
 	}
 }

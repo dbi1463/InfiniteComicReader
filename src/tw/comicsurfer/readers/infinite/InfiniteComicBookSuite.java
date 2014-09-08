@@ -50,7 +50,7 @@ public class InfiniteComicBookSuite extends AbstractComicBookSuite {
 	 */
 	public InfiniteComicBookSuite(URI url) {
 		super(url);
-	    _type = isChapterType()? "Volumes" : "Chapters";
+	    _type = isChapterType()? "Chapters" : "Volumes";
 	    _codeParser = new InfiniteComicBookURLCodeParser();
 	    _baseURLRetriever = new InfiniteComicBookBaseURLRetriever();
 	}
